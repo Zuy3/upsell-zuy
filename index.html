@@ -1,1 +1,179 @@
-<iframe src="https://claude.site/public/artifacts/ebe4cc05-a4df-40ab-bb80-574cd3950062/embed" title="Claude Artifact" width="100%" height="600" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oferta Especial — Saúde Natural Descomplicada</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --verde: #1a6b3a;
+    --verde-claro: #2d9e57;
+    --verde-neon: #3ddc6e;
+    --amarelo: #f5c842;
+    --branco: #ffffff;
+    --texto: #1a1a1a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Nunito', sans-serif; background: #0d1f0f; color: var(--branco); overflow-x: hidden; }
+  .barra-topo { background: var(--amarelo); text-align: center; padding: 10px 20px; font-weight: 800; font-size: 14px; color: #1a1a1a; }
+  .contador-wrap { background: linear-gradient(135deg, #1a1a1a 0%, #0d2a10 100%); border-bottom: 2px solid var(--verde-claro); padding: 16px 20px; text-align: center; }
+  .contador-label { font-size: 13px; color: #aaa; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 2px; }
+  .contador-digitos { display: flex; justify-content: center; gap: 8px; align-items: center; }
+  .digito-bloco { background: var(--verde); border-radius: 8px; padding: 8px 14px; min-width: 56px; text-align: center; }
+  .digito-numero { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 900; color: var(--branco); line-height: 1; }
+  .digito-label { font-size: 10px; color: var(--verde-neon); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+  .sep { font-size: 24px; color: var(--verde-claro); font-weight: 900; }
+  .hero { background: linear-gradient(160deg, #0d2a10 0%, #1a4d20 40%, #0d1f0f 100%); padding: 50px 20px 40px; text-align: center; }
+  .confirmado-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(61,220,110,0.15); border: 1px solid var(--verde-neon); border-radius: 50px; padding: 8px 20px; font-size: 13px; color: var(--verde-neon); font-weight: 700; margin-bottom: 24px; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 6vw, 52px); font-weight: 900; line-height: 1.15; margin-bottom: 20px; }
+  .hero h1 em { font-style: normal; color: var(--verde-neon); }
+  .hero-sub { font-size: clamp(15px, 3vw, 18px); color: #c8e6cc; max-width: 620px; margin: 0 auto 30px; line-height: 1.7; }
+  .alerta-box { background: rgba(245,200,66,0.1); border-left: 4px solid var(--amarelo); border-radius: 0 12px 12px 0; padding: 16px 20px; max-width: 640px; margin: 0 auto 36px; text-align: left; font-size: 14px; color: #f0e5aa; line-height: 1.6; }
+  .alerta-box strong { color: var(--amarelo); font-size: 15px; }
+  .produto-card { background: linear-gradient(135deg, #1a3d1f 0%, #0f2912 100%); border: 1px solid rgba(61,220,110,0.25); border-radius: 20px; max-width: 700px; margin: 0 auto 40px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .produto-header { background: linear-gradient(135deg, #1a6b3a, #2d9e57); padding: 20px 28px; display: flex; align-items: center; gap: 16px; }
+  .produto-icone { width: 56px; height: 56px; background: rgba(255,255,255,0.2); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 28px; flex-shrink: 0; }
+  .produto-titulo { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,0.7); }
+  .produto-nome { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; }
+  .produto-body { padding: 28px; }
+  .beneficios-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+  @media(max-width:500px) { .beneficios-grid { grid-template-columns: 1fr; } }
+  .beneficio-item { display: flex; align-items: flex-start; gap: 10px; background: rgba(61,220,110,0.07); border-radius: 10px; padding: 12px 14px; border: 1px solid rgba(61,220,110,0.12); }
+  .beneficio-icon { font-size: 20px; flex-shrink: 0; }
+  .beneficio-texto { font-size: 13px; color: #c8e6cc; line-height: 1.4; }
+  .beneficio-texto strong { color: var(--branco); font-size: 13px; display: block; }
+  .preco-section { background: rgba(0,0,0,0.3); border-radius: 16px; padding: 24px; text-align: center; margin-bottom: 24px; }
+  .preco-de { font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+  .preco-antigo { font-size: 22px; color: #888; text-decoration: line-through; margin-bottom: 4px; }
+  .preco-por { font-size: 13px; color: var(--verde-neon); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
+  .preco-atual { font-family: 'Playfair Display', serif; font-size: 58px; font-weight: 900; color: var(--branco); line-height: 1; margin-bottom: 8px; }
+  .preco-atual sup { font-size: 28px; vertical-align: super; }
+  .preco-parcelas { font-size: 13px; color: #aaa; margin-bottom: 16px; }
+  .economia-badge { display: inline-block; background: var(--amarelo); color: #1a1a1a; font-weight: 800; font-size: 13px; padding: 6px 16px; border-radius: 50px; }
+  .btn-sim { display: block; width: 100%; background: linear-gradient(135deg, #2ecc71, #1a9e50); color: var(--branco); font-family: 'Nunito', sans-serif; font-size: clamp(16px, 3.5vw, 20px); font-weight: 800; padding: 20px 30px; border-radius: 16px; border: none; cursor: pointer; text-decoration: none; text-align: center; margin-bottom: 12px; box-shadow: 0 8px 30px rgba(46,204,113,0.35); transition: transform 0.2s; }
+  .btn-sim:hover { transform: translateY(-2px); }
+  .btn-sim-sub { font-size: 12px; opacity: 0.85; font-weight: 600; display: block; margin-top: 4px; }
+  .btn-nao { display: block; text-align: center; color: #666; font-size: 12px; text-decoration: none; padding: 10px; cursor: pointer; }
+  .selos { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px 28px; border-top: 1px solid rgba(255,255,255,0.07); }
+  .selo-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: #888; }
+  .prova-section { max-width: 700px; margin: 0 auto 40px; padding: 0 20px; }
+  .prova-titulo { text-align: center; font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #888; margin-bottom: 20px; }
+  .depoimentos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media(max-width:500px) { .depoimentos { grid-template-columns: 1fr; } }
+  .depo-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
+  .depo-estrelas { color: var(--amarelo); font-size: 13px; margin-bottom: 8px; }
+  .depo-texto { font-size: 13px; color: #c0c0c0; line-height: 1.6; margin-bottom: 12px; font-style: italic; }
+  .depo-nome { font-size: 12px; font-weight: 700; color: var(--verde-neon); }
+  .depo-cargo { font-size: 11px; color: #666; }
+  .garantia-section { max-width: 700px; margin: 0 auto 30px; padding: 0 20px; }
+  .garantia-box { background: rgba(245,200,66,0.06); border: 2px dashed rgba(245,200,66,0.3); border-radius: 16px; padding: 24px; display: flex; gap: 20px; align-items: flex-start; }
+  .garantia-icone { font-size: 48px; flex-shrink: 0; }
+  .garantia-titulo { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--amarelo); margin-bottom: 8px; }
+  .garantia-texto { font-size: 13px; color: #c0b870; line-height: 1.7; }
+  .cta-final { max-width: 700px; margin: 0 auto 20px; padding: 0 20px; }
+  .footer-nao { text-align: center; padding: 20px; border-top: 1px solid rgba(255,255,255,0.05); }
+  .urgencia-float { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: rgba(26,107,58,0.97); border: 1px solid var(--verde-neon); border-radius: 50px; padding: 12px 24px; font-size: 13px; font-weight: 700; color: var(--branco); display: flex; align-items: center; gap: 10px; box-shadow: 0 8px 30px rgba(0,0,0,0.5); z-index: 999; white-space: nowrap; }
+  .urgencia-float a { color: var(--verde-neon); text-decoration: none; font-weight: 800; }
+</style>
+</head>
+<body>
+<div class="barra-topo">⚡ ATENÇÃO: Esta oferta expira quando você sair desta página — não feche nem recarregue!</div>
+<div class="contador-wrap">
+  <div class="contador-label">⏳ Esta oferta exclusiva expira em</div>
+  <div class="contador-digitos">
+    <div class="digito-bloco"><div class="digito-numero" id="min">14</div><div class="digito-label">min</div></div>
+    <div class="sep">:</div>
+    <div class="digito-bloco"><div class="digito-numero" id="seg">59</div><div class="digito-label">seg</div></div>
+  </div>
+</div>
+<div class="hero">
+  <div class="confirmado-badge"><span>✅</span> Seu pedido está confirmado!</div>
+  <h1>E depois dos 7 dias...<br><em>o que acontece?</em></h1>
+  <p class="hero-sub">A maioria das mulheres conquista resultados na primeira semana — e depois volta ao ponto de partida. Isso acontece porque falta <strong>um plano para continuar</strong>. É exatamente isso que vamos resolver agora.</p>
+  <div class="alerta-box"><strong>⚠️ Leia antes de continuar:</strong><br>Esta é uma oferta única e exclusiva criada <em>apenas</em> para quem acabou de comprar o Barriga Chapada em 7 Dias. O preço especial <strong>não existe em nenhuma outra página</strong> e some assim que você sair daqui.</div>
+</div>
+<div style="padding: 0 16px;">
+<div class="produto-card">
+  <div class="produto-header">
+    <div class="produto-icone">🌿</div>
+    <div><div class="produto-titulo">Oferta exclusiva pós-compra</div><div class="produto-nome">Saúde Natural Descomplicada</div></div>
+  </div>
+  <div class="produto-body">
+    <div class="beneficios-grid">
+      <div class="beneficio-item"><div class="beneficio-icon">🫃</div><div class="beneficio-texto"><strong>Mantém a barriga chapada</strong>Após os 7 dias, continua com receitas que sustentam os resultados</div></div>
+      <div class="beneficio-item"><div class="beneficio-icon">🛡️</div><div class="beneficio-texto"><strong>Fortifica a imunidade</strong>50 receitas que previnem 90% das doenças mais comuns</div></div>
+      <div class="beneficio-item"><div class="beneficio-icon">🔥</div><div class="beneficio-texto"><strong>Elimina inflamações</strong>Anti-inflamatórios naturais que o teu corpo vai adorar</div></div>
+      <div class="beneficio-item"><div class="beneficio-icon">💧</div><div class="beneficio-texto"><strong>Melhora a digestão</strong>Fim dos desconfortos, inchaço e gases de vez</div></div>
+      <div class="beneficio-item"><div class="beneficio-icon">⚡</div><div class="beneficio-texto"><strong>Mais energia no dia a dia</strong>Ingredientes que recarregam o teu corpo naturalmente</div></div>
+      <div class="beneficio-item"><div class="beneficio-icon">📖</div><div class="beneficio-texto"><strong>50 receitas caseiras</strong>Simples, com ingredientes de mercado, prontas em minutos</div></div>
+    </div>
+    <div class="preco-section">
+      <div class="preco-de">Preço normal</div>
+      <div class="preco-antigo">R$ 67,00</div>
+      <div class="preco-por">🔥 Oferta exclusiva de hoje</div>
+      <div class="preco-atual"><sup>R$</sup>47<span style="font-size:32px">,90</span></div>
+      <div class="preco-parcelas">ou 4x de R$ 12,68 sem juros</div>
+      <div class="economia-badge">💰 Você economiza R$ 19,10 agora</div>
+    </div>
+    <a href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5" class="btn-sim">✅ SIM! Quero garantir meus resultados por R$ 47,90<span class="btn-sim-sub">Clique aqui e adicione ao meu pedido com 1 clique</span></a>
+    <a href="#" class="btn-nao" id="btn-nao">Não obrigada, dispenso os resultados duradouros →</a>
+    <div class="selos">
+      <div class="selo-item"><span>🔒</span> Compra 100% segura</div>
+      <div class="selo-item"><span>🏦</span> Pagamento via Hotmart</div>
+      <div class="selo-item"><span>📱</span> Acesso imediato</div>
+      <div class="selo-item"><span>🔄</span> Garantia 7 dias</div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="prova-section" style="margin-top:40px;">
+  <div class="prova-titulo">✨ O que dizem quem já transformou a saúde</div>
+  <div class="depoimentos">
+    <div class="depo-card"><div class="depo-estrelas">★★★★★</div><div class="depo-texto">"Comprei o Barriga Chapada e logo depois peguei este. Foi a melhor decisão. Já são 3 semanas mantendo os resultados!"</div><div class="depo-nome">Claudia M.</div><div class="depo-cargo">São Paulo</div></div>
+    <div class="depo-card"><div class="depo-estrelas">★★★★★</div><div class="depo-texto">"As receitas são simples e deliciosas. Minha família toda adotou. A barriga nunca mais voltou como antes."</div><div class="depo-nome">Fernanda R.</div><div class="depo-cargo">Rio de Janeiro</div></div>
+    <div class="depo-card"><div class="depo-estrelas">★★★★★</div><div class="depo-texto">"Parei de me sentir cansada e inchada. As receitas anti-inflamatórias mudaram minha energia completamente."</div><div class="depo-nome">Patricia L.</div><div class="depo-cargo">Belo Horizonte</div></div>
+    <div class="depo-card"><div class="depo-estrelas">★★★★★</div><div class="depo-texto">"Perdi mais 4kg nas 3 semanas seguintes. O guia de saúde natural foi o complemento perfeito pro Barriga Chapada."</div><div class="depo-nome">Luciana S.</div><div class="depo-cargo">Curitiba</div></div>
+  </div>
+</div>
+<div class="garantia-section">
+  <div class="garantia-box">
+    <div class="garantia-icone">🛡️</div>
+    <div><div class="garantia-titulo">Garantia Total de 7 Dias</div><div class="garantia-texto">Se por qualquer razão você não ficar satisfeita, basta enviar um email em até 7 dias e devolvemos <strong style="color:var(--amarelo)">100% do seu dinheiro</strong> — sem perguntas, sem burocracia.</div></div>
+  </div>
+</div>
+<div class="cta-final">
+  <a href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5" class="btn-sim">✅ SIM! Quero o Saúde Natural por R$ 47,90<span class="btn-sim-sub">Garantia de 7 dias • Acesso imediato • Pagamento seguro</span></a>
+</div>
+<div class="footer-nao">
+  <a href="#" class="btn-nao" id="btn-nao2" style="font-size:13px;color:#555;">Não obrigada, não preciso manter meus resultados →</a>
+  <p style="font-size:11px;color:#333;margin-top:16px;">© 2026 Biomédico Zuy · Todos os direitos reservados · Hotmart · Compra Segura</p>
+</div>
+<div class="urgencia-float">⏱️ Oferta expira em <span id="float-tempo" style="color:var(--verde-neon);font-weight:900;">14:59</span> &nbsp;→&nbsp; <a href="https://pay.hotmart.com/F100527201N?offerId=au0hxvh5">Quero R$47,90</a></div>
+<script>
+  let total = 14*60+59;
+  function tick(){
+    const m=Math.floor(total/60),s=total%60;
+    const mm=String(m).padStart(2,'0'),ss=String(s).padStart(2,'0');
+    document.getElementById('min').textContent=mm;
+    document.getElementById('seg').textContent=ss;
+    document.getElementById('float-tempo').textContent=mm+':'+ss;
+    if(total>0){total--;setTimeout(tick,1000);}
+  }
+  tick();
+  const urlDownsell='https://pay.hotmart.com/B93427134G?offerId=b0bfwvb3';
+  document.getElementById('btn-nao').addEventListener('click',function(e){e.preventDefault();window.location.href=urlDownsell;});
+  document.getElementById('btn-nao2').addEventListener('click',function(e){e.preventDefault();window.location.href=urlDownsell;});
+</script>
+</body>
+</html>
+```
+
+---
+
+## Depois de colar:
+```
+Verifica que começa com: <!DOCTYPE html>
+→ Clica "Commit changes"
+→ Aguarda 2 minutos
+→ Abre: https://Zuy3.github.io/upsell-zuy
